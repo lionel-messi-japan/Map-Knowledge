@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#game {
+  text-align: center;
+  margin: 20px;
+}
+
+#startBtn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#startBtn:hover {
+  background: #45a049;
+}
+
+#quiz, #timer {
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+#map {
+  width: 90%;
+  height: 70vh;
+  max-width: 1000px;
+  margin-bottom: 20px;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+}
+
+/* ルールボタン */
+#ruleBtn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* モーダル */
+#ruleModal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+#ruleModal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#question-counter{
+  position: absolute;
+  top:360px; 
+  left:50px; 
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+#score-display{
+  position:absolute;
+  top: 360px;
+  right: 50px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+#survivalBtn{
+  background: #cd2727;
+  color: white;
+  border: none;
+  padding: 12px 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
